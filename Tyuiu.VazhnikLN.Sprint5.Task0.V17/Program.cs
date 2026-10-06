@@ -18,11 +18,10 @@ namespace Tyuiu.VazhnikLN.Sprint5.Task0.V17
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
             string res = File.ReadAllText("OutPutFileTask0.txt");
-            foreach (var c in File.ReadLines("OutPutFileTask0.txt"))
-            {
-                Console.WriteLine(c);
-            }
-            
+            double r = Convert.ToDouble(res);
+            Console.WriteLine(Math.Round(r, 3));
+
+
         }
     }
 }
