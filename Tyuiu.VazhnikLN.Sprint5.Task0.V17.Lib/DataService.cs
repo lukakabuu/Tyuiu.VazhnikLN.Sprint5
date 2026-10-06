@@ -9,7 +9,7 @@ namespace Tyuiu.VazhnikLN.Sprint5.Task0.V17.Lib
             string c = $@"{Directory.GetCurrentDirectory()}\OutPutFileTask0.txt";
             double z = 2.4 * Math.Pow(x, 3) + 0.4 * Math.Pow(x, 2) - 1.4 * x + 4.1;
             File.WriteAllText(c, Convert.ToString(z));
-            Math.Round(z, 2);
+            Math.Round(z, 3);
             return c;
         }
     }
