@@ -1,4 +1,5 @@
-﻿using System.IO;
+﻿using Tyuiu.VazhnikLN.Sprint5.Task0.V17.Lib;
+using System.IO;
 namespace Tyuiu.VazhnikLN.Sprint5.Task0.V17.Test
 {
     [TestClass]
@@ -7,7 +8,8 @@ namespace Tyuiu.VazhnikLN.Sprint5.Task0.V17.Test
         [TestMethod]
         public void ValidSaveToFileTextData()
         {
-            string pad = @"C:\Users\user\source\repos\Tyuiu.VazhnikLN.Sprint5\Tyuiu.VazhnikLN.Sprint5.Task0.V17\bin\Debug\net8.0\OutPutFileTask0.txt";
+            DataService ds = new DataService();
+            string pad = ds.SaveToFileTextData(3);
             FileInfo fileinfo = new FileInfo(pad);
             bool fileExists = fileinfo.Exists;
             bool wait = true;
