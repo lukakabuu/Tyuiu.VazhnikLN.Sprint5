@@ -7,7 +7,7 @@ namespace Tyuiu.VazhnikLN.Sprint5.Task0.V17.Test
         [TestMethod]
         public void ValidSaveToFileTextData()
         {
-            string pad = @"C:\Users\user\source\repos\Tyuiu.VazhnikLN.Sprint5\bin\debug\OutPutFileTask0.txt";
+            string pad = @"C:\Users\user\source\repos\Tyuiu.VazhnikLN.Sprint5\Tyuiu.VazhnikLN.Sprint5.Task0.V17\bin\Debug\net8.0\OutPutFileTask0.txt";
             FileInfo fileinfo = new FileInfo(pad);
             bool fileExists = fileinfo.Exists;
             bool wait = true;
