@@ -7,9 +7,8 @@ namespace Tyuiu.VazhnikLN.Sprint5.Task0.V17.Lib
         public string SaveToFileTextData(int x)
         {
             string path = Path.Combine(Path.GetTempPath(), "OutPutFileTask0.txt");
-            double z = 2.4 * Math.Pow(x, 3) + 0.4 * Math.Pow(x, 2) - 1.4 * x + 4.1;
+            double z = Math.Round(2.4 * Math.Pow(x, 3) + 0.4 * Math.Pow(x, 2) - 1.4 * x + 4.1, 3);
             File.WriteAllText(path, Convert.ToString(z));
-            Math.Round(z, 3);
             return path;
         }
     }
