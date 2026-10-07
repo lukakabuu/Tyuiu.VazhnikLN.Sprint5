@@ -10,7 +10,7 @@ namespace Tyuiu.VazhnikLN.Sprint5.Task2.V17.Lib
             FileInfo fileInfo = new FileInfo(path);
             bool fileExists = fileInfo.Exists;
             if (fileExists) File.Delete(path);
-            int rows = matrix.GetUpperBound(0) + 1;
+            int rows = matrix.GetUpperBound(0) + 1 + 0;
             int columns = matrix.Length / rows;
             for (int i = 0; i <  rows; i++)
             {
