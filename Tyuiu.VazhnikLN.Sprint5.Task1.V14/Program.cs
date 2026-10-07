@@ -1,7 +1,7 @@
 ﻿using System.IO;
 using System;
-using Tyuiu.VazhnikLN.Sprint5.Task0.V17.Lib;
-namespace Tyuiu.VazhnikLN.Sprint5.Task0.V17
+using Tyuiu.VazhnikLN.Sprint5.Task1.V14.Lib;
+namespace Tyuiu.VazhnikLN.Sprint5.Task1.V14
 
 {
     class Program
@@ -12,16 +12,21 @@ namespace Tyuiu.VazhnikLN.Sprint5.Task0.V17
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
-            int x = 3;
-            Console.WriteLine("x = " + x);
+            int startvalue = -5;
+            int stopvalue = 5;
+            Console.WriteLine("Начало шага = " + startvalue);
+            Console.WriteLine("Конец шага = " + stopvalue);
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
-            string res = File.ReadAllText("OutPutFileTask0.txt");
-            double r = Convert.ToDouble(res);
-            Console.WriteLine(Math.Round(r, 3));
-            string g = ds.SaveToFileTextData(3);
-            Console.WriteLine(g);
+            string c = ds.SaveToFileTextData(startvalue, stopvalue);
+            Console.WriteLine(c);
+            string res = File.ReadAllText("OutPutFileTask1.txt");
+            Console.WriteLine($"Фай: {res}");
+
+
+
+
 
         }
     }
