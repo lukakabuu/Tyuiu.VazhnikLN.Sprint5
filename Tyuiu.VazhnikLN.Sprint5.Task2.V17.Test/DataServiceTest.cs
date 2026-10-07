@@ -8,7 +8,8 @@ namespace Tyuiu.VazhnikLN.Sprint5.Task2.V17.Test
         public void TestMethod1()
         {
             DataService ds = new DataService();
-            string pad = ds.SaveToFileTextData(-5, 5);
+            int[,] matrix = { { 2, 1, 7 }, { 1, 2, 4 }, { 2, 3, 4 } };
+            string pad = ds.SaveToFileTextData(matrix);
             FileInfo fileinfo = new FileInfo(pad);
             bool fileExists = fileinfo.Exists;
             bool wait = true;
