@@ -16,7 +16,7 @@ namespace Tyuiu.VazhnikLN.Sprint5.Task2.V17.Lib
             {
                 for (int j = 0; j < columns; j++)
                 {
-                    if (matrix[i, j] % 2 != 0) matrix[i, j] = 0;
+                    if ((matrix[i, j] % 2) != 0) matrix[i, j] = 0;
                 }
             }
             string n = "";
@@ -30,7 +30,7 @@ namespace Tyuiu.VazhnikLN.Sprint5.Task2.V17.Lib
                 }
                 if (i != rows - 1) File.AppendAllText(path, n + Environment.NewLine);
                 else File.AppendAllText(path, n);
-                string str = "";
+                n = "";
             }
             return path;
             
