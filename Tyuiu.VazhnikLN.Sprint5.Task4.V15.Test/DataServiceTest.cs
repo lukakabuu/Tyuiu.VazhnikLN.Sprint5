@@ -8,7 +8,7 @@ namespace Tyuiu.VazhnikLN.Sprint5.Task4.V15.Test
         public void TestMethod1()
         {
             DataService ds = new DataService();
-            string pad = @"C:\DataSprint5\InPutDataFileTask4V15.txt";
+            string pad = Path.Combine("C:", "DataSprint5", "InPutDataFileTask4V5.txt"); ;
             FileInfo fileinfo = new FileInfo(pad);
             bool fileExists = fileinfo.Exists;
             bool wait = true;
