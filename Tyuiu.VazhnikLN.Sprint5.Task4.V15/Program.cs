@@ -17,10 +17,10 @@ namespace Tyuiu.VazhnikLN.Sprint5.Task4.V15
             string path = Path.Combine("C:", path1, path2);
             double x = 3.54;
             Console.WriteLine("x = " + x);
+            Console.WriteLine(path);
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
-            Console.WriteLine(path);
             double c = ds.LoadFromDataFile(path);
             Console.WriteLine(c);
 
