@@ -12,9 +12,7 @@ namespace Tyuiu.VazhnikLN.Sprint5.Task4.V15
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
-            string path1 = @"DataSprint5";
-            string path2 = @"InPutDataFileTask4V15.txt";
-            string path = Path.Combine("C:", path1, path2);
+            string path = Path.Combine("C:", "DataSprint5", "InPutDataFileTask4V15.txt");
             double x = 3.54;
             Console.WriteLine("x = " + x);
             Console.WriteLine(path);
