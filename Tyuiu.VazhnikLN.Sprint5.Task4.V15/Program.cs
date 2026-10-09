@@ -19,8 +19,8 @@ namespace Tyuiu.VazhnikLN.Sprint5.Task4.V15
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
-            double c = ds.LoadFromDataFile(path);
-            Console.WriteLine(c);
+            double res = ds.LoadFromDataFile(path);
+            Console.WriteLine("Результат = " + res);
 
 
 
