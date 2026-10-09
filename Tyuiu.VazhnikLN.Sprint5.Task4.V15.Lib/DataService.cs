@@ -6,7 +6,7 @@ namespace Tyuiu.VazhnikLN.Sprint5.Task4.V15.Lib
         public double LoadFromDataFile(string path)
         {
             double x = double.Parse(File.ReadAllText(path).Trim(), System.Globalization.CultureInfo.InvariantCulture);
-            double y = Math.Round(Math.Sin(x) + x * x / 2, 3);
+            double y = Math.Round(Math.Sin(x) + Math.Pow(x, 2) / 2, 3);
             return y;
         }
     }
