@@ -14,5 +14,15 @@ namespace Tyuiu.VazhnikLN.Sprint5.Task4.V15.Test
             bool wait = true;
             Assert.AreEqual(wait, fileExists);
         }
+        [TestMethod]
+
+        public void CheckNum()
+        {
+            string path = Path.Combine("C:", "DataSprint5", "InPutDataFileTask4V5.txt");
+            double res_wait = 5.878;
+            double res = double.Parse(File.ReadAllText(path).Trim(), System.Globalization.CultureInfo.InvariantCulture);
+            Assert.AreEqual(res, res_wait);
+        }
+        
     }
 }
