@@ -15,10 +15,9 @@ namespace Tyuiu.VazhnikLN.Sprint5.Task7.V19.Lib
                 string line;
                 while ((line = Reader.ReadLine()) != null)
                 {
-                    if ((line.Contains("сс") == true))
+                    if (((line.ToLower()).Contains("сс") == true))
                     {
                         strline = strline + line.Replace("сс", "");
-                        if (line.Contains("Сс") == true) strline = strline + line.Replace("Сс", "");
                     }
                     File.AppendAllText(pass, strline);
                     strline = "";
